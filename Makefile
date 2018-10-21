@@ -4,9 +4,10 @@ help:
 	make clean; make cls; make runnable; make init;
 	@echo ""
 	@echo "Please use \`make <target>\` where <target> is one of"
+	@echo "  init       to make the project have the default work files"
 	@echo "  clean      to make the work directories clean of unwanted files"
-	@echo "  runnable   to make bash files runnable by chmod"
 	@echo "  cls        to make the screen clear"
+	@echo "  runnable   to make bash files runnable by chmod"
 	@echo "  curls     run the recursive *.sh files at once"
 
 init:
