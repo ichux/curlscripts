@@ -24,6 +24,6 @@ runnable:
 
 curls:
 	@echo "scripts will be executed as listed below"
-	find . -type f -iname "*.sh"
+	find . -type f -iname "*.sh" ! -iname 'bootstrap.sh'
 	@echo ""
-	find . -type f -iname "*.sh" -exec bash {} \;
+	find . -type f -iname "*.sh" ! -iname 'bootstrap.sh' -exec bash {} \;
